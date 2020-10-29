@@ -20,7 +20,11 @@ class ImagePostViewController: UIViewController {
     @IBOutlet weak var slider3: UISlider!
     @IBOutlet weak var segmentedControl1: UISegmentedControl!
     
-    var originalImage: UIImage?
+    var originalImage: UIImage? {
+        didSet {
+            updateImage()
+        }
+    }
     
     
     
@@ -30,7 +34,10 @@ class ImagePostViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         originalImage = imageView.image
-        // Do any additional setup after loading the view.
+        //introspecting the attributes of filter
+//        let filter = CIFilter.gaussianBlur()
+//        print(filter.attributes)
+        
     }
     
     
@@ -47,6 +54,14 @@ class ImagePostViewController: UIViewController {
         imagePicker.delegate = self
         
         present(imagePicker, animated: true, completion: nil)
+    }
+    
+    private func updateImage() {
+        if let originalImage = originalImage {
+            imageView.image = originalImage
+        } else {
+            imageView.image = nil
+        }
     }
     
 
