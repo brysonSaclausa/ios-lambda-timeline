@@ -26,15 +26,13 @@ class ImagePostViewController: UIViewController {
         }
     }
     
+    private let context = CIContext()
+    private let filter = CIFilter.colorControls()
     
-    
-    
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
         originalImage = imageView.image
-        //introspecting the attributes of filter
+//        introspecting the attributes of filter
 //        let filter = CIFilter.gaussianBlur()
 //        print(filter.attributes)
         
@@ -56,9 +54,13 @@ class ImagePostViewController: UIViewController {
         present(imagePicker, animated: true, completion: nil)
     }
     
+    private func image(byFilterimg image: UIImage) -> UIImage {
+        let inputImage = CIImage(image: image)
+    }
+    
     private func updateImage() {
         if let originalImage = originalImage {
-            imageView.image = originalImage
+            imageView.image = image(byFilterimg: originalImage)
         } else {
             imageView.image = nil
         }
