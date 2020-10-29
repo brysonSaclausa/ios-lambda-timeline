@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0cL-wa-vvS">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Image Post View Controller-->
+        <scene sceneID="m9p-nh-wm7">
+            <objects>
+                <viewController id="TqG-sg-Gax" customClass="ImagePostViewController" customModule="iosImageFiltRProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kZu-Ap-aRP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9wW-jG-GUH">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ZeX-wk-ERK">
+                                <rect key="frame" x="55" y="719" width="304" height="106"/>
+                                <subviews>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="E2I-Vu-7vS">
+                                        <rect key="frame" x="-2" y="0.0" width="308" height="31"/>
+                                        <connections>
+                                            <action selector="slider1Changed:" destination="TqG-sg-Gax" eventType="valueChanged" id="ySa-MU-c2B"/>
+                                        </connections>
+                                    </slider>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="bRp-nH-VOL">
+                                        <rect key="frame" x="-2" y="38" width="308" height="31"/>
+                                        <connections>
+                                            <action selector="slider2Changed:" destination="TqG-sg-Gax" eventType="valueChanged" id="At4-S8-EEq"/>
+                                        </connections>
+                                    </slider>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="EHA-84-dWf">
+                                        <rect key="frame" x="-2" y="76" width="308" height="31"/>
+                                        <connections>
+                                            <action selector="slider3Changed:" destination="TqG-sg-Gax" eventType="valueChanged" id="w02-sa-t0k"/>
+                                        </connections>
+                                    </slider>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Nba-F0-KCz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZeX-wk-ERK" firstAttribute="top" secondItem="9wW-jG-GUH" secondAttribute="bottom" constant="-177" id="2Yz-ev-eIq"/>
+                            <constraint firstItem="ZeX-wk-ERK" firstAttribute="leading" secondItem="Nba-F0-KCz" secondAttribute="leading" constant="55" id="Dwb-Lx-bh9"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="9wW-jG-GUH" secondAttribute="bottom" constant="-34" id="HQ7-ud-V0B"/>
+                            <constraint firstItem="9wW-jG-GUH" firstAttribute="leading" secondItem="Nba-F0-KCz" secondAttribute="leading" id="Jkg-wC-Gdl"/>
+                            <constraint firstItem="9wW-jG-GUH" firstAttribute="top" secondItem="Nba-F0-KCz" secondAttribute="top" id="ifP-aE-2Ia"/>
+                            <constraint firstItem="9wW-jG-GUH" firstAttribute="centerX" secondItem="kZu-Ap-aRP" secondAttribute="centerX" id="k3c-iM-yTg"/>
+                            <constraint firstItem="ZeX-wk-ERK" firstAttribute="centerX" secondItem="kZu-Ap-aRP" secondAttribute="centerX" id="yX7-sb-2s7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="p2L-Ac-Su8">
+                        <barButtonItem key="rightBarButtonItem" title="Choose Photo" id="alT-ow-JfS">
+                            <connections>
+                                <action selector="choosePhotoButtonTapped:" destination="TqG-sg-Gax" id="t2v-ee-gAl"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imageView" destination="9wW-jG-GUH" id="lOg-jm-opQ"/>
+                        <outlet property="slider1" destination="E2I-Vu-7vS" id="Xkz-l8-jPP"/>
+                        <outlet property="slider2" destination="bRp-nH-VOL" id="cxC-pH-nhP"/>
+                        <outlet property="slider3" destination="EHA-84-dWf" id="ThS-2g-WeA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N4l-9Y-Wfs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="115.94202898550725" y="-17.410714285714285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kLz-Wr-HbK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0cL-wa-vvS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sQY-8y-5S8">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="TqG-sg-Gax" kind="relationship" relationship="rootViewController" id="NLP-Ru-pgt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pWj-og-him" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-794.20289855072474" y="-17.410714285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
