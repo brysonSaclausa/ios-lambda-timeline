@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C070C8C254BF4C5003E2261 /* AudioPrototypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C070C8B254BF4C5003E2261 /* AudioPrototypeViewController.swift */; };
 		7C6D7A44254BEBD8005AF28D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6D7A43254BEBD8005AF28D /* AppDelegate.swift */; };
 		7C6D7A46254BEBD8005AF28D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6D7A45254BEBD8005AF28D /* SceneDelegate.swift */; };
-		7C6D7A48254BEBD8005AF28D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6D7A47254BEBD8005AF28D /* ViewController.swift */; };
 		7C6D7A4B254BEBD8005AF28D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C6D7A49254BEBD8005AF28D /* Main.storyboard */; };
 		7C6D7A4D254BEBD9005AF28D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C6D7A4C254BEBD9005AF28D /* Assets.xcassets */; };
 		7C6D7A50254BEBD9005AF28D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C6D7A4E254BEBD9005AF28D /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7C070C8B254BF4C5003E2261 /* AudioPrototypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPrototypeViewController.swift; sourceTree = "<group>"; };
 		7C6D7A40254BEBD8005AF28D /* timelineAudioProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = timelineAudioProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C6D7A43254BEBD8005AF28D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C6D7A45254BEBD8005AF28D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7C6D7A47254BEBD8005AF28D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7C6D7A4A254BEBD8005AF28D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7C6D7A4C254BEBD9005AF28D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C6D7A4F254BEBD9005AF28D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,8 +58,8 @@
 			children = (
 				7C6D7A43254BEBD8005AF28D /* AppDelegate.swift */,
 				7C6D7A45254BEBD8005AF28D /* SceneDelegate.swift */,
-				7C6D7A47254BEBD8005AF28D /* ViewController.swift */,
 				7C6D7A49254BEBD8005AF28D /* Main.storyboard */,
+				7C070C8B254BF4C5003E2261 /* AudioPrototypeViewController.swift */,
 				7C6D7A4C254BEBD9005AF28D /* Assets.xcassets */,
 				7C6D7A4E254BEBD9005AF28D /* LaunchScreen.storyboard */,
 				7C6D7A51254BEBD9005AF28D /* Info.plist */,
@@ -137,7 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C6D7A48254BEBD8005AF28D /* ViewController.swift in Sources */,
+				7C070C8C254BF4C5003E2261 /* AudioPrototypeViewController.swift in Sources */,
 				7C6D7A44254BEBD8005AF28D /* AppDelegate.swift in Sources */,
 				7C6D7A46254BEBD8005AF28D /* SceneDelegate.swift in Sources */,
 			);
@@ -293,7 +293,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = B.timelineAudioProject;
+				PRODUCT_BUNDLE_IDENTIFIER = B.timelineAudioProjectPrototype;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -312,7 +312,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = B.timelineAudioProject;
+				PRODUCT_BUNDLE_IDENTIFIER = B.timelineAudioProjectPrototype;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
