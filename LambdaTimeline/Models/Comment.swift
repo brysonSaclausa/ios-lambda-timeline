@@ -17,6 +17,7 @@ class Comment: Hashable {
     let text: String?
     let author: String
     let timestamp: Date
+    var audioURL: URL?
     
     init(text: String? = nil, author: String, timestamp: Date = Date()) {
         self.text = text
