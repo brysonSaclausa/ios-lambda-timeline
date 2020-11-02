@@ -51,7 +51,7 @@ class ImagePostViewController: ShiftableViewController {
                 return
         }
 
-        postController.createImagePost(with: title, image: image, ratio: image.ratio)
+        postController.createImagePost(with: title, image: image, ratio: image.ratio, audioURL: nil)
         
         navigationController?.popViewController(animated: true)
     }

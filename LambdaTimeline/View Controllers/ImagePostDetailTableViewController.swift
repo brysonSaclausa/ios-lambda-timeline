@@ -69,6 +69,8 @@ class ImagePostDetailTableViewController: UITableViewController {
         present(alert, animated: true, completion: nil)
     }
     
+    
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return (post?.comments.count ?? 0) - 1
     }

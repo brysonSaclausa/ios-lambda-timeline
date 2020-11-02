@@ -22,7 +22,9 @@
 		46D1A48924FF0BC4008D1CA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46D1A48824FF0BC4008D1CA7 /* Main.storyboard */; };
 		46D571F52173CF3E00E7FF73 /* UIImage+Ratio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D571F42173CF3E00E7FF73 /* UIImage+Ratio.swift */; };
 		46D571F82173FC2700E7FF73 /* ImagePostDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D571F72173FC2700E7FF73 /* ImagePostDetailTableViewController.swift */; };
+		7CA138912550909900BAEC47 /* AudioCommentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA138902550909900BAEC47 /* AudioCommentController.swift */; };
 		7CA78F07254D442D00615D8B /* RecordingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA78F06254D442D00615D8B /* RecordingViewController.swift */; };
+		7CA78F3E254FEB7C00615D8B /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA78F3D254FEB7C00615D8B /* CustomTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,7 +45,9 @@
 		46D1A48824FF0BC4008D1CA7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		46D571F42173CF3E00E7FF73 /* UIImage+Ratio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Ratio.swift"; sourceTree = "<group>"; };
 		46D571F72173FC2700E7FF73 /* ImagePostDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePostDetailTableViewController.swift; sourceTree = "<group>"; };
+		7CA138902550909900BAEC47 /* AudioCommentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioCommentController.swift; sourceTree = "<group>"; };
 		7CA78F06254D442D00615D8B /* RecordingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingViewController.swift; sourceTree = "<group>"; };
+		7CA78F3D254FEB7C00615D8B /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				4646379B2170091A00E7FF73 /* PostController.swift */,
+				7CA138902550909900BAEC47 /* AudioCommentController.swift */,
 			);
 			path = "Model Controllers";
 			sourceTree = "<group>";
@@ -126,6 +131,7 @@
 		46A0366B21700F6100E7FF73 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				7CA78F3D254FEB7C00615D8B /* CustomTableViewCell.swift */,
 				46A0366C2170158900E7FF73 /* SignInViewController.swift */,
 				46A0366921700F5100E7FF73 /* PostsCollectionViewController.swift */,
 				46CFE6F421707D0000E7FF73 /* ImagePostViewController.swift */,
@@ -188,7 +194,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1000;
-				LastUpgradeCheck = 1000;
+				LastUpgradeCheck = 1210;
 				ORGANIZATIONNAME = "Lambda School";
 				TargetAttributes = {
 					46463777216FDE4B00E7FF73 = {
@@ -234,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46A0366D2170158900E7FF73 /* SignInViewController.swift in Sources */,
+				7CA138912550909900BAEC47 /* AudioCommentController.swift in Sources */,
 				46CFE6F92170862C00E7FF73 /* ShiftableViewController.swift in Sources */,
 				7CA78F07254D442D00615D8B /* RecordingViewController.swift in Sources */,
 				4646377C216FDE4B00E7FF73 /* AppDelegate.swift in Sources */,
@@ -241,6 +248,7 @@
 				46463790216FFD1B00E7FF73 /* Post.swift in Sources */,
 				46D571F82173FC2700E7FF73 /* ImagePostDetailTableViewController.swift in Sources */,
 				46CFE7032171572600E7FF73 /* ImagePostCollectionViewCell.swift in Sources */,
+				7CA78F3E254FEB7C00615D8B /* CustomTableViewCell.swift in Sources */,
 				4646379C2170091A00E7FF73 /* PostController.swift in Sources */,
 				46A0366A21700F5100E7FF73 /* PostsCollectionViewController.swift in Sources */,
 				46D571F52173CF3E00E7FF73 /* UIImage+Ratio.swift in Sources */,
@@ -289,6 +297,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -350,6 +359,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;

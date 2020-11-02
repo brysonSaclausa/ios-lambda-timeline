@@ -19,10 +19,12 @@ class Comment: Hashable {
     let timestamp: Date
     var audioURL: URL?
     
-    init(text: String? = nil, author: String, timestamp: Date = Date()) {
+    init(text: String? = nil, author: String, timestamp: Date = Date(), audioURL: URL?) {
         self.text = text
         self.author = author
         self.timestamp = timestamp
+        self.audioURL = audioURL
+        
     }
     
     func hash(into hasher: inout Hasher) {

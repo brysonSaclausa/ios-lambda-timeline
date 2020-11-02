@@ -25,11 +25,11 @@ class Post: Equatable {
         return comments.first?.text
     }
     
-    init(title: String, mediaType: MediaType, ratio: CGFloat?, author: String, timestamp: Date = Date()) {
+    init(title: String, mediaType: MediaType, ratio: CGFloat?, author: String, timestamp: Date = Date(), audioURL: URL?) {
         self.mediaType = mediaType
         self.ratio = ratio
         self.author = author
-        self.comments = [Comment(text: title, author: author)]
+        self.comments = [Comment(text: title, author: author, audioURL: audioURL)]
         self.timestamp = timestamp
         self.id = UUID().uuidString
     }
